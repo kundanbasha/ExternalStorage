@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.root.externalstorage.MainActivity">
+
+
+    <EditText
+        android:id="@+id/inputdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter data"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <Button
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:ems="10"
+        android:layout_height="wrap_content"
+        android:text="write"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="142dp"
+        android:onClick="writeMethod"/>
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read"
+        android:ems="10"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:onClick="readMethod"/>
+
+    <TextView
+        android:id="@+id/readdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="305dp" />
+</LinearLayout>
